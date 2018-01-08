@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Club</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div class="custom-input">
+        <div class="form-item">
+            <label>EVENT NAME/VENUE:</label>
+            <ion-input type="text" placeholder="Enter"></ion-input>
+        </div>
+        <div class="form-item">
+            <label>DATE:</label>
+            <!-- <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime> -->
+            <ion-input type="date" placeholder="Enter"></ion-input>
+        </div>
+        <div class="form-item">
+            <label>COACH/TRAINER:</label>
+            <ion-input type="text" placeholder="Enter"></ion-input>
+        </div>
+        <div class="form-item">
+            <label>MANAGER/ADVISOR:</label>
+            <ion-input type="text" placeholder="Enter"></ion-input>
+        </div>
+        <div class="form-item">
+            <label stacked>PLAYERS/MEMBERS WITH ID NUMBER:</label>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-8>
+                        <ion-input type="text" placeholder="Enter"></ion-input>
+                    </ion-col>
+                    <ion-col col-4>
+                        <ion-input type="text" placeholder="Enter"></ion-input>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-8>
+                        <ion-input type="text" placeholder="Enter"></ion-input>
+                    </ion-col>
+                    <ion-col col-4>
+                        <ion-input type="text" placeholder="Enter"></ion-input>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-11></ion-col>
+                    <ion-col col-1><ion-icon name="add-circle"></ion-icon></ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="form-item">
+            <label>EQUIPMENT/QUANTITY:</label>
+            <ion-row>
+                <ion-col col-8>
+                    <ion-select [(ngModel)]="gender">
+                        <ion-option value="f">Female</ion-option>
+                        <ion-option value="m">Male</ion-option>
+                    </ion-select>
+                </ion-col>
+                <ion-col col-4>
+                    <ion-input type="text" placeholder="Enter"></ion-input>
+                </ion-col>
+            </ion-row>
+
+        </div>
+        <div class="form-item">
+            <label>BUDGET:</label>
+            <ion-input type="text" placeholder="Enter"></ion-input>
+        </div>
+        <div class="form-item">
+            <label>TRANSPORTATION:</label>
+            <ion-row>
+                <ion-col>
+                    <ion-select [(ngModel)]="gender">
+                        <ion-option value="f">Female</ion-option>
+                        <ion-option value="m">Male</ion-option>
+                    </ion-select>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="form-item">
+            <label>ACHIEVEMENT:</label>
+            <ion-input type="text" placeholder="Enter"></ion-input>
+        </div>
+        <div class="form-item">
+            <label>IMPACT OF EVENT:</label>
+            <ion-textarea type="text" placeholder="Enter"></ion-textarea>
+        </div>
+    </div>
+</ion-content>

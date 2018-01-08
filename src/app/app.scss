@@ -14,3 +14,63 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.custom-tab {
+    .tabbar {
+        background-color: #D8D8D8;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .tab-button {
+        color: white;
+    }
+}
+.custom-input {
+    .form-item {
+        margin-top: 4px;
+        &:first-child {
+            margin-top: 15px;
+        }
+        label {
+            margin: 4px 8px;
+        }
+        input {
+            margin: 4px 8px 6px 8px !important;
+            border: 1px solid grey !important;
+            border-radius: 5px;
+            padding: 4px !important;
+            &:focus {
+                border-color: #4EAEE1 !important;
+            }
+        }
+        textarea {
+            margin: 4px 8px 6px 8px !important;
+            border: 1px solid grey !important;
+            border-radius: 5px;
+            padding: 4px !important;
+            height: 80px !important;
+            &:focus {
+                border-color: #4EAEE1 !important;
+            }
+        }
+        .select {
+            border: 1px solid grey !important;
+            border-radius: 5px;
+            padding: 4px 4px 1.5px 4px !important;
+            margin: 4px 8px 6px 4px !important;
+            max-width: 100% !important;
+        }
+        .select-icon {
+            padding-right: 18px;
+        }
+        .icon {
+            font-size: 1.9em;
+        }
+    }
+    .grid {
+        padding: 0px !important;
+        .col {
+            padding: 0px !important;
+        }
+    }
+}
